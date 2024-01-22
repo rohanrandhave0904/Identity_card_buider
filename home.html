@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to Bootstrap CSS (you can replace the version number if needed) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <!-- Your HTML content goes here -->
+
+    <!-- Link to your custom JavaScript file -->
+    <script src="script.js"></script>
+
+    <!-- Link to Bootstrap JS and Popper.js (order matters) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <div class="for-btn-card">
+    <div class="container-for-id">
+        <div class="college-and-pic">
+           <div class="college-name-home" id="college-name-home">JSPM's,BSIOTR,Wagholi</div>
+           <div class="img-for-home" id="img-for-home"><img id="your-photo" src="" alt="Your Photo"></div>
+        </div>
+        <div class="name-dob-class">
+            <div class="name-class-home">
+              <div>Name:</div><div class="your-name-home" id="your-name-home"></div>
+            </div>
+            <div class="name-class-home">
+                <div>DOB:</div><div class="your-name-home" id="your-dob-home"></div>
+            </div>
+            <div class="name-class-home">
+                <div>Class:</div><div class="your-name-home" id="your-class-home"></div>
+            </div>
+        </div>
+        <div class="footer-home name-class-home" >Affiliated To Savitribai Phule Pune University</div>
+
+    </div>
+    <div class="for-btn">
+        <a href="./index.html" class="btn btn-primary">Go to Home</a>
+    </div>
+    <div class="your-name-home" style="padding-left: 50px;">
+        <footer>
+            <p class="your-name-home">&copy; 2024 Rohan Randhave.All rights reserved.</p>
+        </footer>
+    </div>
+    </div>
+    <script>
+        // for college data
+        var collegeData = sessionStorage.getItem("collegeData");
+        if (collegeData) {
+            document.getElementById("college-name-home").innerText = collegeData;
+        }
+
+        //for your-name
+        var yourName = sessionStorage.getItem("yourName");
+        if (yourName) {
+            document.getElementById("your-name-home").innerText = yourName;
+        }
+
+
+       //for photo
+       var yourdob = sessionStorage.getItem("yourdob");
+        if (yourdob) {
+            document.getElementById("your-dob-home").innerText =yourdob;
+        }
+
+
+        //for class
+        var classIndex = sessionStorage.getItem("classIndex");
+        if (classIndex) {
+            document.getElementById("your-class-home").innerText =classIndex;
+        }
+
+
+        //for photo
+        var photoData = sessionStorage.getItem("photoInput");
+       if (photoData) {
+            document.getElementById("your-photo").src = photoData;
+        }
+    </script>
+</body>
+
+</html>

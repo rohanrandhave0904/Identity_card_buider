@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity Card Builder</title>
+
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link to Bootstrap CSS (you can replace the version number if needed) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <!-- Your HTML content goes here -->
+
+    <!-- Link to your custom JavaScript file -->
+    <script src="script.js"></script>
+
+    <!-- Link to Bootstrap JS and Popper.js (order matters) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <div class="card mx-4 lg-1 mx-md-9 shadow-5-strong ">
+     <div class="card-body px-md-5 align-left">
+        <h2 class="fw-bold mb-4 center">Identity Card</h2>
+        <div class="form outline mb-2">
+            <label class="form outline mb-2">Your College Name-</label>
+            <input type="text" id="college-name" class="form-control" placeholder="College Of  Engineering,pune">
+        </div>
+        <div class="form outline mb-2">
+           <label class="form outline mb-2" >Your Name-</label>
+           <input type="text" id="your-name" class="form-control" placeholder="joe root">
+        </div>
+        <div class="form outline mb-2">
+           <label class="form outline mb-2">Date Of Birth-</label>
+           <input type="date" class="form-control" id="your-dob">
+        </div>
+        <div class="form outline mb-2">
+            <label class="form outline mb-2" >Class-</label>
+            <input type="text" class="form-control" placeholder="TE" id="class-index">
+        </div>
+        <div class="form outline mb-2">
+            <label class="form outline mb-2">Take or Upload a Photo-</label>
+            <input type="file" accept="image/*" capture="camera" class="form-control" id="photoInput" name="photoInput">
+        </div>
+        <button type="button" class="btn btn-primary" style="padding-top: 10px;" onclick="generate_id()">Get Identity Card</button>
+      </div>
+      <div style="padding-left: 50px;">
+        <footer>
+            <p>&copy; 2024 Rohan Randhave. All rights reserved.</p>
+        </footer>
+      </div>
+    </div>
+    
+</body>
+      
+</html>
